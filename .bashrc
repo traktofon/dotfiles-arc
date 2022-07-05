@@ -25,5 +25,9 @@ else
 fi
 
 # Load minimal set of modules
-module load gcc-libs tmux ops-tools
+if declare -F module >/dev/null; then
+   module load gcc-libs tmux ops-tools
+else
+   true # ignore
+fi
 
