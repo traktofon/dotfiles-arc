@@ -1,0 +1,4 @@
+#!/bin/bash
+# copies the dotfiles from here to the home directory
+
+cp -af .??* ~/
